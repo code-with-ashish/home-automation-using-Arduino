@@ -4,7 +4,13 @@
 
 Complete Arduino based Remote controlled Home Automation project for Engineering students and [Neophile](https://en.wikipedia.org/wiki/Neophile).
 
-<h1>Getting Started</h1>
+<h1> Getting Started</h1>
+
+##### Table of Contents  
+[Prerequisites](#prerequisites)  
+[Components list](#components-list)  
+[Tutorial](#tutorial)  
+[License](#license)
 
 ## Prerequisites
 
