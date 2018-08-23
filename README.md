@@ -10,8 +10,8 @@ Complete Arduino based Remote controlled Home Automation project for Engineering
 
 ### Components list
 
-<img src="http://img.dxcdn.com/productimages/sku_173930_1.jpg" align="right" height="200px" />
-<img src="https://www.robotistan.com/arduino-uno-r3-clone-with-usb-cable-usb-chip-ch340-16006-27-B.jpg" align="right" width="200px" height="200px" />
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/arduno_uno.jpg" align="right" height="200px" />
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/basicRemote_large.jpg" align="right" width="200px" height="200px" />
 
 * Arduino UNO
 * TSOP1738
