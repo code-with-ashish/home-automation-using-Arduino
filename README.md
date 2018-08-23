@@ -8,6 +8,8 @@ Complete Arduino based Remote controlled Home Automation project for Engineering
 
 ## Prerequisites
 
+Basic knowladge of making electrical circuitary/connections and C/C++ programming language.
+
 ### Components list
 
 <img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/arduno_uno.jpg" align="right" height="200px" />
@@ -32,37 +34,41 @@ Complete Arduino based Remote controlled Home Automation project for Engineering
 
 > Follow these steps for complete connections and circuitary.
 
-**Step 1: Solder IR sensor On The PCB.**
+### Step 1: Solder IR sensor On The PCB.
 
-<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/step1-1.jpg" align="left" width="200px" height="200px" />
-<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/step1-2.jpg" align="left" width="200px" height="200px" />
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/step1-1.jpg" align="right" width="200px" height="200px" />
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/step1-2.jpg" align="right" width="200px" height="200px" />
+
 
 In this step we need to solder the TSOP1738 IR sensor to a small piece of PCB. Like the image given above.
 
-**Step 2: Connect "TSOP1738" with Arduino**
+
+### Step 2: Connect "TSOP1738" with Arduino.
+
 
 Pin Diagram of **TSOP1738**
 
+
 <img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_diagram.png" align="left" width="200px" height="200px" />
-<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_diagram.jpg" align="left" width="200px" height="200px" />
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_diagram.jpg" align="right" width="200px" height="200px" />
+
 
 * Arduino +5V -> TSOP1738 Vcc or +5V
 * Arduino Gnd -> TSOP1738 Gnd
 * Arduino Pin 11 -> TSOP1738 Pin OUT
 
-<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_diagram.jpg" align="left" width="200px" height="200px" />
-
-> **Arduino Pin 11** will take **input** from **TSOP1738** 
-
-**Step 3: Test "TSOP1738" output with Arduino Terminal**
 
 <img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_conn.png" align="center" width="200px" height="200px" />
 
-* Arduino +5V -> TSOP1738 Vcc or +5V
-* Arduino Gnd -> TSOP1738 Gnd
-* Arduino Pin 11 -> TSOP1738 Pin OUT
 
 > **Arduino Pin 11** will take **input** from **TSOP1738** 
+
+
+### Step 3: Test "TSOP1738" output with Arduino Serial Monitor
+
+
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/test_input.jpg" align="center" width="200px" height="200px" />
+
 
 **Hex Value Table**
 
@@ -79,15 +85,17 @@ Pin Diagram of **TSOP1738**
 | 8             | 0x1FEF00F     |
 | 9             | 0x1FE9867     |
 
+Now use these codes in arduino sketch. When these codes match with the stored one do something. You can see these in my code that decodes the IR remote control button and shows the button number on the serial monitor.
 
-**Step 4: Connect Relays according to your purpose**
+
+### Step 4: Connect Relays according to your purpose
 
 > Relay Connection
 
 <img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/relay_conn.png" align="center" width="200px" height="200px" />
 
 
-**Step 5: Final Circuit**
+### Step 5: Final Circuit
 
 <img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/final_circuit.jpg" align="center" width="200px" height="200px" />
 
