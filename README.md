@@ -36,8 +36,8 @@ Basic knowladge of making electrical circuitary/connections and C/C++ programmin
 
 ### Step 1: Solder IR sensor On The PCB.
 
-<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/step1-1.jpg" align="right" width="200px" height="200px" />
-<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/step1-2.jpg" align="right" width="200px" height="200px" />
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/step1-1.jpg" align="left" width="200px" height="200px" />
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/step1-2.jpg" align="center" width="200px" height="200px" />
 
 
 In this step we need to solder the TSOP1738 IR sensor to a small piece of PCB. Like the image given above.
@@ -50,15 +50,16 @@ Pin Diagram of **TSOP1738**
 
 <img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_diagram.png" align="left" width="200px" height="200px" />
 
-<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_diagram.jpg" align="right" width="200px" height="200px" />
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_diagram.jpg" align="left" width="200px" height="200px" />
+
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_conn.png" align="center" width="200px" height="200px" />
+
 
 * Arduino +5V -> TSOP1738 Vcc or +5V
 * Arduino Gnd -> TSOP1738 Gnd
 * Arduino Pin 11 -> TSOP1738 Pin OUT
 
 > **Arduino Pin 11** will take **input** from **TSOP1738**
-
-<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_conn.png" align="center" width="200px" height="200px" />
 
 
 ### Step 3: Test "TSOP1738" output with Arduino Serial Monitor
