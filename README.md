@@ -21,15 +21,76 @@ Complete Arduino based Remote controlled Home Automation project for Engineering
 * Connecting wires
 * Bread board
 * Power supply
+> Other Tools Needed:
+* Soldering Iron
+* Soldering Wire
+* Soldering paste
+* Non-metallic Box(used as enclosure for the device)
+* Utility Knife and glue
 
-## Articles
+## Tutorial
 
-Connection diagram and circuit is available in ["Arduino site"](https://create.arduino.cc/projecthub/suhail_jr/ir-remote-controlled-home-automation-629106).
+> Follow these steps for complete connections and circuitary.
 
-## Contribute
+**Step 1: Solder IR sensor On The PCB.**
 
-Contributions are always welcome!
-Please read the [contribution guidelines](CONTRIBUTION.md) first.
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/step1-1.jpg" align="left" width="200px" height="200px" />
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/step1-2.jpg" align="left" width="200px" height="200px" />
+
+In this step we need to solder the TSOP1738 IR sensor to a small piece of PCB. Like the image given above.
+
+**Step 2: Connect "TSOP1738" with Arduino**
+
+Pin Diagram of **TSOP1738**
+
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_diagram.png" align="left" width="200px" height="200px" />
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_diagram.jpg" align="left" width="200px" height="200px" />
+
+* Arduino +5V -> TSOP1738 Vcc or +5V
+* Arduino Gnd -> TSOP1738 Gnd
+* Arduino Pin 11 -> TSOP1738 Pin OUT
+
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_diagram.jpg" align="left" width="200px" height="200px" />
+
+> **Arduino Pin 11** will take **input** from **TSOP1738** 
+
+**Step 3: Test "TSOP1738" output with Arduino Terminal**
+
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/pin_conn.png" align="center" width="200px" height="200px" />
+
+* Arduino +5V -> TSOP1738 Vcc or +5V
+* Arduino Gnd -> TSOP1738 Gnd
+* Arduino Pin 11 -> TSOP1738 Pin OUT
+
+> **Arduino Pin 11** will take **input** from **TSOP1738** 
+
+**Hex Value Table**
+
+| **Button**    | **Hex Value** |
+| ------------- |:-------------:|
+| 0             | 0x1FEE01F     |
+| 1             | 0x1FE50AF     |
+| 2             | 0x1FED827     |
+| 3             | 0x1FEF807     |
+| 4             | 0x1FE30CF     |
+| 5             | 0x1FEB04F     |
+| 6             | 0x1FE708F     |
+| 7             | 0x1FE00FF     |
+| 8             | 0x1FEF00F     |
+| 9             | 0x1FE9867     |
+
+
+**Step 4: Connect Relays according to your purpose**
+
+> Relay Connection
+
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/relay_conn.png" align="center" width="200px" height="200px" />
+
+
+**Step 5: Final Circuit**
+
+<img src="https://github.com/ashish-eqn/home-automation-using-Arduino/blob/master/Doc/final_circuit.jpg" align="center" width="200px" height="200px" />
+
 
 ## License
 
